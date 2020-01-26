@@ -65,7 +65,7 @@ clf = pickle.load(pickle_in)
 accuracy = clf.score(x_test,y_test)
 #accuracy in 0.97... for linear regression
 #for svm.SVR it is 0.807...
-#for polynomial kernel it is 0.062..so fuckin worse..
+#for polynomial kernel it is 0.062..so  worse..
 
 #print(accuracy) # shifted one percent of the data we get an accuracy of this value|| one percent came from the .01*.... .01*100 = 1
 #accuracy is actually error squared
