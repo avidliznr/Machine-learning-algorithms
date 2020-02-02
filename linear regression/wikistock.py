@@ -11,8 +11,6 @@ style.use('ggplot')
 import pickle
 
 
-quandl.ApiConfig.api_key = 'vygKPQxSLx4-PxACcdht'
-
 df = quandl.get('WIKI/GOOGL')
 df = df[['Adj. Open','Adj. High','Adj. Low','Adj. Close','Adj. Volume']]
 df['hl_percent'] = (df['Adj. High'] - df['Adj. Low'])/ df['Adj. Low'] *100.0
